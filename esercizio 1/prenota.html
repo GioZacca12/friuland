@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prenota la tua visita</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="/template/styles/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="page">
+        <header>
+            
+            <div class="top-menu">
+                <div class="logo">
+                    <img src="/template/images/logo.png" alt="logo" width="60px" height="60px">
+                </div>
+
+                <div id="menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/prenota.html">Prenota</a>
+                            </li>
+                            <li>
+                                <a href="/about">About</a>
+                            </li>
+                            <li>
+                                <a href="/news">News</a>
+                            </li>
+                            <li>
+                                <a href="/contact-us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </div>
+
+
+        </header>
+
+        <main>
+            <h1>Friuland</h1>
+            <h2>Il parco divertimenti delle pannocchie</h2>
+
+            <div class="form-wrapper">
+                <form method="get" action="/richiesta">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                
+                    <div>
+                        <label for="cognome">Cognome</label>
+                        <input type="text" name="cognome" id="cognome" required>
+                    </div>
+                
+                    <div>
+                        <label for="data">Data di prenotazione</label>
+                        <input type="date" name="data" id="data" required>
+                    </div>
+                
+                    <div>
+                        <label for="num_adulti">Adulti</label>
+                        <select id="num_adulti" name="num_adulti">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <label for="num_ridotti">Ridotti</label>
+                        <select name="num_ridotti" id="num_ridotti">
+                            <option value="0">Nessun ridotto</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+
+                    <div class="align-column">
+                        <label for="note">Descrivi la richiesta</label>
+                        <textarea name="note" id="note" cols="20" rows="5" placeholder="Inserisci la tua nota"></textarea>
+                    </div>
+                
+                    <input type="submit" value="Invia richiesta">
+                                   
+                </form>
+
+            </div>
+        </main>
+
+        <footer>
+
+            <div class="bottom-menu">
+
+             <div>
+                <div class="logo">
+                    <img src="/template/images/logo.png" alt="logo">
+                </div>
+                <div>
+                    <h3>Heading</h3>
+                    <p> via di QUA, 69 <br />
+                        <a href="mailto:info@gmail.com">Info@gmail.com</a>
+                    </p>
+                </div>
+             </div>
+                
+             <div>
+                <div>
+                    <h3>Menu pagine</h3>
+                    <ul>
+                        <li><a href="/contatti.html">Contatti</a></li>
+                        <li><a href="/servizi.html">Servizi</a></li>
+                        <li><a href="/dove-siamo.html">Dove siamo</a></li>
+                    </ul>
+                </div>
+             </div>
+
+             <div>
+                <div>
+                    <h3>Menu legale</h3>
+                    <ul>
+                        <li><a href="/termini.html">Termini</a></li>
+                        <li><a href="/privacy.html">Privacy</a></li>
+                        <li><a href="/reclami.html">Reclami</a></li>
+                    </ul>
+                </div>
+             </div>
+
+             <div id="social">
+                <div class="logo-social">
+                    <ul>
+                        <li class="logo">
+                            <a target="_blank" href="https://facebook.com" aria-label="Friuland su Facebook">
+                                <img src="/template/images/Facebooklogo.png" alt="Icona di Facebook">
+                            </a>
+                        </li>
+                        <li class="logo">
+                            <a target="_blank" href="https://twitter.com" aria-label="Friuland su Twitter">
+                                <img src="/template/images/twitter.png" alt="Icona di Twitter">
+                            </a>
+                        </li>
+                        <li class="logo">
+                            <a target="_blank" href="https://instagram.com" aria-label="Friuland su Instagram">
+                                <img src="/template/images/instagram.png" alt="Icona di Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="finanziamento">
+                    <img src="/template/images/segugio.png" alt="finanziamento">
+                </div>
+                <div class="logo-social">
+                    <ul>
+                        <li><a href="/cookie-policy.html">Cookie policy</a></li>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+             </div>
+
+            </div>
+
+        </footer>
+
+
+    </body>
+
+</html>

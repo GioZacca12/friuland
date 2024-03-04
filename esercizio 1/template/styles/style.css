@@ -1,0 +1,356 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* FONT */
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.barlow-condensed-medium {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.barlow-condensed-semibold {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+
+
+
+
+
+
+a {
+    color: rgb(166, 68, 11);
+}
+
+header {
+    padding: 100px 100px;
+    background-image: url(/template/images/sfondo.jpg);
+    background-size: cover;
+}
+/*
+header:hover {
+    color: #AAAAAA;
+}
+*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu li {
+    display: inline;
+    padding: 4px 8px;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+#menu a {
+    color: #333;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+#menu a:hover {
+    color: rgb(166, 88, 11);
+    text-decoration: underline;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+footer {
+    background-color: #555555;
+    color: #FFFFFF;
+    height: 50vh;
+    padding: 100px 50px;
+}
+
+#social li {
+    display: inline;
+}
+
+.bottom-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-menu > div {
+    width: 100%;
+}
+
+.bottom-menu li {
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+#finanziamento > img {
+    height: 116px;
+    width: 436px;
+}
+
+.logo-social > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+.bottom-menu a:hover {
+    color: lightgreen;
+}
+
+/** NOTIZIE **/
+
+.articles__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.articles article {
+    width: 400px;
+}
+
+.articles img {
+    width: 100%;
+    height: 265px;
+    object-fit: cover;
+}
+
+main {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+article  p {
+    width: 400px;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.articles h4 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 1rem;
+}
+
+.articles a {
+    text-decoration: none;
+    background-color: #c61620;
+    color: #fff;
+    padding: 4px 10px;
+}
+
+.articles a:hover {
+    background-color: #dd6666;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.articles h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.articles {
+    margin-top: 60px;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+/* FORM */
+
+main.prenota {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.form-wrapper label {
+    width: 50%;
+    display: inline-block;
+    line-height: 2.2;
+}
+
+.form-wrapper div {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-wrapper {
+    width: 500px;
+    margin: 2rem auto;
+}
+
+.form-wrapper input,
+.form-wrapper select {
+    width: 50%;
+}
+
+.form-wrapper .align-column {
+    flex-direction: column;
+}
+
+.form-wrapper input[type="submit"] {
+    margin-left: 50%;
+}
+
+
+
+@media (min-width: 768px) {
+    #menu-li {
+        display: inline;
+    }
+    header {
+        height: 80px;
+    }
+    .homepage header {
+        height: 80vh;
+    }
+}
